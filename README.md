@@ -1,9 +1,9 @@
 [![BlackArch package](https://repology.org/badge/version-for-repo/blackarch/bopscrk.svg)](https://repology.org/project/bopscrk/versions)
 [![Rawsec's CyberSecurity Inventory](https://inventory.raw.pm/img/badges/Rawsec-inventoried-FF5050_flat.svg)](https://inventory.raw.pm/)
 [![Packaging status](https://repology.org/badge/tiny-repos/bopscrk.svg)](https://repology.org/project/bopscrk/versions)
-![[GPL-3.0 License](https://github.com/r3nt0n)](https://img.shields.io/badge/license-GPL%203.0-brightgreen.svg)
-![[Python 3](https://github.com/r3nt0n)](http://img.shields.io/badge/python-3-blue.svg)
-![[Version 2.4](https://github.com/r3nt0n)](http://img.shields.io/badge/version-2.4-orange.svg)
+![[GPL-3.0 License](https://github.com/trhacknon)](https://img.shields.io/badge/license-GPL%203.0-brightgreen.svg)
+![[Python 3](https://github.com/trhacknon)](http://img.shields.io/badge/python-3-blue.svg)
+![[Version 2.4](https://github.com/trhacknon)](http://img.shields.io/badge/version-2.4-orange.svg)
 
 
 
@@ -12,7 +12,7 @@
 
 Included in **<a href="https://blackarch.org/">BlackArch Linux</a>** pentesting distribution and **<a href="https://inventory.raw.pm/">Rawsec's Cybersecurity Inventory</a>** since August 2019.  
   
-<p align="center"><img src="https://github.com/R3nt0n/bopscrk/blob/master/img/bopscrk-2.3.gif" /></p>  
+<p align="center"><img src="https://github.com/trhacknon/bopscrk/blob/master/img/bopscrk-2.3.gif" /></p>  
 
 + **Targeted-attack wordlist creator**: introduce personal info related to target, combines every word and transforms results into possible passwords. The *lyricpass* module allows to **search lyrics related to artists** and include them to the wordlists.
 
@@ -34,7 +34,7 @@ pip install bopscrk
 ```
 #### Option 2: Download last version published on Github (more updated)
 ```
-git clone --recurse-submodules https://github.com/r3nt0n/bopscrk
+git clone --recurse-submodules https://github.com/trhacknon/bopscrk
 cd bopscrk
 pip install -r requirements.txt
 ```
@@ -86,9 +86,9 @@ python3 bopscrk.py -i
 + To provide **artist names with spaces** through command line you should provides it **quotes-enclosed**. *Example*: `-a "john doe,john smith"`
 
 ### Lyricpass 
-<p align="center"><img src="https://github.com/R3nt0n/bopscrk/blob/master/img/bopscrk-2.3-lyricpass-example.png" /></p>  
+<p align="center"><img src="https://github.com/trhacknon/bopscrk/blob/master/img/bopscrk-2.3-lyricpass-example.png" /></p>  
 
-This feature is based in a modified version of a [tool](https://github.com/initstring/lyricpass) developed originally by [initstring](https://github.com/initstring/). The changes are made to integrate input and output's tool with bopscrk.  
+This feature is based in a modified version of a [tool](https://github.com/trhacknon/lyricpass) developed originally by [initstring](https://github.com/trhacknon/). The changes are made to integrate input and output's tool with bopscrk.  
 
 It will retrieve all lyrics from all songs which belongs to artists that you provide. **By default it will store each artist, each phrase found with space substitution, each phrase found reduced to its initials** (which will be transformed later if you have activated leet and case transforms).
 
